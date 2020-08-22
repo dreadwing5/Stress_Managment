@@ -29,21 +29,21 @@
   },
   {
     "question": "How often do you feel confident about handling personal problems?",
-    "choice1": "Never",
-    "choice2": "Almost Never",
+    "choice1": "Very Often",
+    "choice2": "Often",
     "choice3": "Sometimes",
-    "choice4": "Often",
-    "choice5": "Very Often",
+    "choice4": "Almost Never",
+    "choice5": "Never",
 
     "answer": 1
   },
   {
     "question": "How often do you feel that things are going well for you?",
-    "choice1": "Never",
-    "choice2": "Almost Never",
+    "choice1": "Very Often",
+    "choice2": "Often",
     "choice3": "Sometimes",
-    "choice4": "Often",
-    "choice5": "Very Often",
+    "choice4": "Almost Never",
+    "choice5": "Never",
 
     "answer": 1
   },
@@ -59,21 +59,21 @@
   },
   {
     "question": "How often are you able to control the things that irritate you?",
-    "choice1": "Never",
-    "choice2": "Almost Never",
+    "choice1": "Very Often",
+    "choice2": "Often",
     "choice3": "Sometimes",
-    "choice4": "Often",
-    "choice5": "Very Often",
+    "choice4": "Almost Never",
+    "choice5": "Never",
 
     "answer": 1
   },
   {
     "question": "How often do you feel on top of things?",
-    "choice1": "Never",
-    "choice2": "Almost Never",
+    "choice1": "Very Often",
+    "choice2": "Often",
     "choice3": "Sometimes",
-    "choice4": "Often",
-    "choice5": "Very Often",
+    "choice4": "Almost Never",
+    "choice5": "Never",
 
     "answer": 1
   },
