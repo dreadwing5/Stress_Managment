@@ -8,5 +8,6 @@ def home():
 
 def html_page(page_name):
     return render_template(page_name)
+    
 if __name__ =="__main__":
     app.run(debug=True)

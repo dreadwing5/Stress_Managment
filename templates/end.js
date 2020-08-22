@@ -17,7 +17,7 @@ else if(25<mostRecentScore && mostRecentScore<=75){
     finalScore.innerText="You are having a moderate stress level.Read this article for releasing stress. www.facebook.com "
 }
 else if(75<mostRecentScore && mostRecentScore<=100){
-    finalScore.innerText="You are at severe conditions.But don't panic cause you can release stress just by following these steps,And should consider contacting a Doctor for better results."
+    finalScore.innerText="You are at severe conditions.Consult a Doctor for better results."
 }
 else if(100<mostRecentScore && mostRecentScore<=150){
     finalScore.innerText="You should probably contact a Doctor."
