@@ -7,7 +7,22 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 const MAX_HIGH_SCORES = 5;
 
-finalScore.innerText = mostRecentScore;
+if(mostRecentScore<=0){
+    finalScore.innerText="You are A happy person."
+}
+else if(0<mostRecentScore<=25){
+    finalScore.innerText="You are having a low stress level.And may try this meditation music for additional benifits."
+}
+else if(25<mostRecentScore<=50){
+    finalScore.innerText="You are having a moderate stress level.Read this article for releasing stress."
+}
+else if(50<mostRecentScore<=75){
+    finalScore.innerText="You are at severe conditions.But don't panic cause you can release stress just by following these steps,And should consider contacting a Doctor for better results."
+}
+else if(75<mostRecentScore<=100){
+    finalScore.innerText="You should probably contact a Doctor."
+}
+// finalScore.innerText = mostRecentScore;
 
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
