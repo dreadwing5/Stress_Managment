@@ -14,7 +14,7 @@ else if(0<mostRecentScore && mostRecentScore<=25){
     finalScore.innerText="You are having a low stress level.And may try this meditation music for additional benifits."
 }
 else if(25<mostRecentScore && mostRecentScore<=75){
-    finalScore.innerText="You are having a moderate stress level.Read this article for releasing stress. www.facebook,com "
+    finalScore.innerText="You are having a moderate stress level.Read this article for releasing stress. www.facebook.com "
 }
 else if(75<mostRecentScore && mostRecentScore<=100){
     finalScore.innerText="You are at severe conditions.But don't panic cause you can release stress just by following these steps,And should consider contacting a Doctor for better results."
