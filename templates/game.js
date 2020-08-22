@@ -64,15 +64,24 @@ choices.forEach((choice) => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const classToApply = selectedChoice.dataset['number'];
 
-        const classToApply =
-            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-
-        if (classToApply === 'correct') {
-            incrementScore(CORRECT_BONUS);
+       
+        if (classToApply ==1) {
+            incrementScore(15);
         }
-
+        else if (classToApply==2){
+            incrementScore(10)
+        }
+        else if (classToApply==3){
+            incrementScore(5)
+        }
+        else if (classToApply==4){
+            incrementScore(0)
+        }
+        else if (classToApply==5){
+            incrementScore(-5)
+        }
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
