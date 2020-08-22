@@ -4,7 +4,7 @@
   width: 100%;
   font-size: 1.8rem;
   border: 0.1rem solid rgb(86, 165, 235, 0.25);
-  background-color: white;
+  background-color: rgb(248, 242, 242);
 }
 
 .choice-container:hover {
@@ -30,7 +30,7 @@
 }
 
 .incorrect {
-  background-color: #dc3545;
+  background-color: #28a745;
 }
 
 /* HUD */
