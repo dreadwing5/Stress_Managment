@@ -96,3 +96,7 @@ incrementScore = (num) => {
     scoreText.innerText = score;
 };
 
+if(score<=0){
+     
+}
+
