@@ -48,7 +48,7 @@ body {
     position: absolute;
     width: 1200px;
     margin-left: 0px;
-    margin-top: -100px;
+    margin-top: 0px;
 
 }
 
@@ -57,7 +57,16 @@ h1 {
     text-transform: uppercase;
     font-size: 65px;
     text-align: center;
-    margin-top: 275px;
+    margin-top: 325px;
+    margin-left:220px
+}
+h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 225px;
+    margin-left:125px
 }
 
 .button {
@@ -80,7 +89,6 @@ h1 {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 3s;
-    transform: rotate(360deg);
   }
 
 .btn-one {
@@ -91,7 +99,7 @@ h1 {
     color: white;
     text-decoration: none;
     margin-right: 5px;
-    margin-left: 100px;
+    margin-left: 125px;
     font-size: 13px;
     text-transform: uppercase;
 }
@@ -104,7 +112,7 @@ h1 {
     color: white;
     text-decoration: none;
     margin-right: 5px;
-    margin-left: 100px;
+    margin-left: 200px;
     font-size: 13px;
     text-transform: uppercase;
 }
