@@ -9,7 +9,7 @@
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 235, 118, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(248, 252, 249);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -23,11 +23,11 @@
 .choice-text {
   padding: 1.5rem;
   width: 100%;
-  background-color: #28a745;
+  background-color: #f7f8f7;
 }
 
 .correct {
-  background-color: #28a745;
+  background-color: #fbfcfb;
 }
 
 .incorrect {
