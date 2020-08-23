@@ -8,7 +8,7 @@ body {
 }
 
 .row {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -73,7 +73,15 @@ h1 {
     margin-right: 5px;
     font-size: 13px;
     text-transform: uppercase;
+    
 }
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 3s;
+    transform: rotate(360deg);
+  }
 
 .btn-one {
     background-color: darkorange;
