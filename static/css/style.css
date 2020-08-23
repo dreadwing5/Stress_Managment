@@ -117,10 +117,24 @@ h2 {
     color: white;
     text-decoration: none;
     margin-right: 5px;
-    margin-left: 200px;
+    margin-left: 100px;
     font-size: 13px;
     text-transform: uppercase;
 }
+.btn-three {
+    background-color: darkorange;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: -100f;;
+}
+
 
 
 .logo img {
