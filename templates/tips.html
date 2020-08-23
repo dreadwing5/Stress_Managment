@@ -1,34 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./static/css/tips.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 
-    <head>
-        <title>HomePage</title>
-        <link href="./static/css/style.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-            body {
-                background-image: url(../static/images/Tips_1.png);
-                height: 100vh;
-                background-size: cover;
-                background-position: center;
-            }
-        </style>
-    </head>
-    
-    <body>
-        <header>
-    
-            <div class="row">
-    
-                    <ul class="main-nav">
-                        <li class="active"><a href="/">Home </a></li>
-                        <li><a class="btn" href="/meditate.html">Meditate</a></li>
-                    </ul>
-    
-                </div>
-    
-        </header>
-    
-    
-    
-    </body>
-    
-    </html>
+  </head>
+  <body>
+    <header>
+
+        <div class="row-one">
+
+                <ul class="main-nav">
+                    <li class="active"><a href="/">HOME </a></li>
+                    <li><a class="btn" href="/meditate.html">Meditate</a></li>
+                </ul>
+
+            </div>
+
+    </header>
+
+
+
+</body>
+  <body>
+    <div class="slidershow middle">
+
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+        <div class="slide s1">
+          <img src="./static/images/1.jpg" alt="">
+          
+        </div>
+        <div class="slide">
+          <img src="./static/images/2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./static/images/3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./static/images/4.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./static/images/5.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+        <label for="r5" class="bar"></label>
+      </div>
+    </div>
+  </body>
+</html>

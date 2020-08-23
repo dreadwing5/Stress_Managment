@@ -11,6 +11,11 @@ body {
     max-width: 1300px;
     margin: auto;
 }
+.row-one {
+    max-width: 1300px;
+    margin: auto;
+    margin-top:-20px;
+}
 
 .main-nav {
     float: right;
