@@ -1,44 +1,36 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
-body
-{
+body {
     font-family: monospace;
 }
-.row
-{
+
+.row {
     max-width: 1200px;
     margin: auto;
 }
 
-.main-nav
-{
+.main-nav {
     float: right;
     list-style: none;
     margin-top: 30px;
 }
-.main-nav li
-{
+
+.main-nav li {
     display: inline-block;
 }
 
-.main-nav li.active a
-{
-    border: 1px solid white;
-    
-}
-
-.main-nav li a:hover
-{
+.main-nav li.active a {
     border: 1px solid white;
 }
 
+.main-nav li a:hover {
+    border: 1px solid white;
+}
 
-.main-nav li a
-{
+.main-nav li a {
     color: white;
     text-decoration: none;
     padding: 5px 20px;
@@ -46,34 +38,34 @@ body
     font-size: 15px;
 }
 
-.hero
-{
+.hero {
     position: absolute;
     width: 1200px;
     margin-left: 0px;
     margin-top: 0px;
-    
+}
+.hero-one{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0px;
+    margin-top: -100px;
+
 }
 
-
-h1
-{
+h1 {
     color: white;
     text-transform: uppercase;
     font-size: 65px;
     text-align: center;
     margin-top: 275px;
-    
 }
 
-.button
-{
+.button {
     margin-top: 30px;
     margin-left: 440px;
 }
 
-.btn
-{
+.btn {
     border: 1px solid white;
     padding: 10px 30px;
     color: white;
@@ -82,8 +74,21 @@ h1
     font-size: 13px;
     text-transform: uppercase;
 }
-.btn-one
-{
+
+.btn-one {
+    background-color: darkorange;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 100px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-two {
     background-color: darkorange;
     font-family: "Roboto", sans-serif;
     border: 1px solid white;
@@ -97,30 +102,7 @@ h1
 }
 
 
-
-
-.btn-two:hover
-{
-    background-color: darkorange;
-    transition: all 0.5s ease-in;
-    
-        
-}
-
-.logo img
-{
+.logo img {
     width: 150px;
     height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
