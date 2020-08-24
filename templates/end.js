@@ -20,7 +20,7 @@ else if(75<mostRecentScore && mostRecentScore<=100){
     finalScore.innerText="You are at severe conditions.Consult a Doctor for better results."
 }
 else if(100<mostRecentScore && mostRecentScore<=150){
-    finalScore.innerText="You should probably contact a Doctor."
+    finalScore.innerText="Your Stress Level is Very High. You should probably contact a Doctor."
 }
 // finalScore.innerText = mostRecentScore;
 
