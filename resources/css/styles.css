@@ -1,0 +1,164 @@
+body{
+    font-family: 'Montserrat';
+    text-align: center;
+  }
+  
+  h1{
+    font-family: "Montserrat-Bold";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 800;
+  }
+  
+  h2{
+    font-family: "Montserrat-Bold";
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  p{
+    color: #8f8f8f;
+  }
+  .colored-section{
+    background-color: #07689f;
+    color: #fff;
+  }
+  
+  .white-section{
+    color: #283c63;
+  }
+  
+  /* Containers */
+  .container-fluid{
+    padding: 7% 15%
+  }
+  
+  /* Navigation Bar */
+  .navbar{
+    padding: 0 0 4.5rem;
+  }
+  
+  .navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-item{
+    padding: 0 18px;
+  }
+  
+  .nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light"
+  }
+  
+  /* Title section */
+  #title .container-fluid{
+    padding: 3% 15% 10%;
+    text-align: left;
+  }
+  /* Title Image */
+  
+  .title-image{
+    width: 100%;
+  }
+  
+  /* Introduction-section */
+  #intro{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  /* Quiz Section */
+  #quiz{
+    text-align: right;
+    margin: 5% 0 0;
+  }
+  .first-page{
+    background-image: url("https://www.safalniveshak.com/wp-content/uploads/2019/01/stress.png");
+    background-size: 100%;
+  
+  }
+  
+  .second-page{
+    background-image: url(https://trainingindustry.com/content/uploads/2018/06/Employee-Wellness-and-Mental-Health-6.15.18.jpg);
+    background-size: 100%;
+  }
+  
+  .third-page{
+    background-image: url("https://www.stress.org/wp-content/uploads/2011/10/stress-banners2.jpg");
+    background-size: 100%;
+    text-align: left;
+  
+  }
+  .quiz-image{
+    width: 60%;
+    border-radius: 100%;
+    margin: 10px;
+  }
+  
+  .page2-heading{
+    font-size: 3.5rem;
+    font-family: "Helvetica";
+    font-weight: 900;
+    color: #fff;
+  }
+  
+  .page2-text{
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #eaeaea;
+  }
+  
+  .page1-heading{
+    font-size: 3.5rem;
+    font-family: "Helvetica";
+    font-weight: 900;
+    color: #000;
+  }
+  
+  .page1-text{
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #000;
+  }
+  
+  .page3-heading{
+    font-size: 3.5rem;
+    font-family: "Helvetica";
+    font-weight: 900;
+    color: #fff;
+  }
+  
+  .page3-text{
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  /* Test-Section */
+  #test{
+    margin: 3% 0;
+  
+  }
+  .test-content{
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  .test-para{
+    color: #fff;
+  }
+  .stress-check{
+    width: 100%;
+  }
+  
+  /* Footer-Section */
+  #footer .container-fluid{
+    padding: 3% 15% 3%;
+  }
+  
