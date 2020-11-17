@@ -27,6 +27,8 @@ router.get('/end',function(req,res){
 router.get('/login',function(req,res){
     res.render('login');
 });
+
+//Maps
 router.get('/maps',function(req,res){
   res.render('maps');
 });
