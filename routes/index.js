@@ -27,6 +27,9 @@ router.get('/end',function(req,res){
 router.get('/login',function(req,res){
     res.render('login');
 });
+router.get('/maps',function(req,res){
+  res.render('maps');
+});
 
 // Dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
