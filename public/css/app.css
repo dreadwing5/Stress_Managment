@@ -3,13 +3,7 @@
   font-size: 62.5%;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
+
 
 h1,
 h2,
@@ -43,6 +37,7 @@ h3 {
 /* UTILITIES */
 
 
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -65,18 +60,6 @@ h3 {
   display: none;
 }
 
-/* BUTTONS */
-.btn {
-  font-size: 1.8rem;
-  padding: 1rem 0;
-  width: 20rem;
-  text-align: center;
-  border: 0.1rem solid #56a5eb;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  color: #56a5eb;
-  background-color: white;
-}
 
 /* .btn:hover {
     cursor: pointer;
@@ -85,13 +68,7 @@ h3 {
     transform: scale(2, 4)
 } */
 
-#button {
-  /* display: none; */
-  position: relative;
-  left: 565px;
-  margin-top: 4%;
-  border-radius: 0;
-}
+
 
 /* FORMS */
 form {
@@ -112,8 +89,4 @@ input {
 
 input::placeholder {
   color: #aaa;
-}
-
-.choice-text {
-  text-align: left;
 }

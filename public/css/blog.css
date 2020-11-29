@@ -1,6 +1,4 @@
-body {
-  padding-top: 40px;
-}
+
 
 /* Hide Scroll Bar */
 
@@ -15,7 +13,6 @@ body#blog-post {
 }
 
 .header {
-  padding-top: 5%;
   font-family: 'Montserrat', sans-serif;
   color: #2D6767;
 
@@ -79,16 +76,34 @@ h1 {
 }
 
 .nav-item {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-family: 'Ubuntu';
+  font-size: 1.2rem;
   padding-left: 2px;
   line-height: normal;
 }
 
 .navbar-brand {
   font-size: 1.8rem;
+  margin-left: 5%;
 }
 
+.list-item {
+  /* margin-left: 5%; */
+  margin-right: 50px;
+
+}
+
+
+#nav.container-fluid{
+  padding: 0 0;
+  margin-top: 2%;
+}
+
+
+/* Header */
+#blog-container.container-fluid{
+  padding: 2% 5%
+}
 /* Footer */
 
 
@@ -106,7 +121,7 @@ h1 {
 
 .footer-blog{
   margin-top: 5%;
-  text-align: center; 
+  text-align: center;
   bottom: 0;
   width: 100%;
   height: 80px;

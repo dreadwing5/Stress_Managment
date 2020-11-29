@@ -1,6 +1,13 @@
 body{
     font-family: 'Montserrat';
     text-align: center;
+    background-color: #f7fff7;
+  }
+
+  /* Hide Scroll Bar */
+
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   h1{
@@ -58,8 +65,8 @@ body{
   }
 
   .nav-item {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
     padding-left: 2px;
     line-height: normal;
   }
@@ -70,12 +77,15 @@ body{
   }
 
   .list-item {
-    margin-left: 5%
+    /* margin-left: 5%; */
+    margin-right: 50px;
+
   }
 
 
   #nav.container-fluid{
-    padding: 0 0
+    padding: 0 0;
+    margin-top: 2%;
   }
 
   /* Title section */
@@ -89,7 +99,14 @@ body{
     width: 100%;
   }
 
+  .quiz-button{
+    padding: 2% 5%;
 
+  }
+
+  .icon{
+    margin: 0px 3px;
+  }
 
   /* Introduction-section */
   #intro{
@@ -98,6 +115,9 @@ body{
     line-height: 1.5;
   }
 
+  .carousel-button{
+    padding: auto 2%;
+  }
   /* Quiz Section */
   #quiz{
     text-align: right;
@@ -105,19 +125,26 @@ body{
   }
   .first-page{
     background-image: url("https://www.safalniveshak.com/wp-content/uploads/2019/01/stress.png");
-    background-size: 100%;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
 
   }
 
   .second-page{
-    background-image: url(https://trainingindustry.com/content/uploads/2018/06/Employee-Wellness-and-Mental-Health-6.15.18.jpg);
-    background-size: 100%;
+    background-image: url("../images/silhouette-woman-doing-yoga-beach.jpg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .third-page{
-    background-image: url("https://www.stress.org/wp-content/uploads/2011/10/stress-banners2.jpg");
-    background-size: 100%;
-    text-align: left;
+    background-image: url("../images/shocked-young-brunette-with-glasses-posing-against-yellow-wall.jpg");
+    /* text-align: left; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+
 
   }
   .quiz-image{
@@ -131,12 +158,14 @@ body{
     font-family: "Helvetica";
     font-weight: 900;
     color: #fff;
+    text-align: left;
   }
 
   .page2-text{
     font-size: 2rem;
     line-height: 1.5;
-    color: #eaeaea;
+    color: #fff;
+    text-align: left;
   }
 
   .page1-heading{
@@ -156,13 +185,16 @@ body{
     font-size: 3.5rem;
     font-family: "Helvetica";
     font-weight: 900;
-    color: #fff;
+    color: #ffe8d6;
+    text-align: left;
   }
 
   .page3-text{
     font-size: 2rem;
     line-height: 1.5;
-    color: #fff;
+    color: #ffe8d6;
+    text-align: left;
+    font-weight: 500;
   }
 
   /* Test-Section */
