@@ -124,7 +124,7 @@ body{
 }
 
 #button {
-  /* display: none; */
+  display: none;
   position: relative;
   left: 565px;
   margin-top: 4%;

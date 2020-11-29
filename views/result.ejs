@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Your Result</title>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div id="nav" class="container-fluid">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">MindSpace</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="list-item navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home
+            </a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/meditate">Meditate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/user-page">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="result-container" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <img id="resultImage" src="" alt="no-stress" height="100%" width="100%">
+      </div>
+      <div class="col-lg-6">
+        <p id="finalScore">
+        </p>
+        <a href="/meditate" role="button" class="btn btn-dark">Meditate</a>
+        <a href="/blog" role="button" class="btn btn-outline-dark">Blogs</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <p>© Copyright 2020 Mind Space</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+
+  <script>
+    const finalScore = document.getElementById('finalScore');
+    const mostRecentScore = localStorage.getItem('mostRecentScore');
+    console.log(mostRecentScore);
+    var setImage = document.getElementById('resultImage');
+    console.log(setImage);
+    const noStress = {
+      text: "YAY!!!  You are A happy person. Keep Smiling and Shining.",
+      image: "../images/no-stress.jpg"
+
+    };
+
+    const lowStress = {
+      text: "You are having a low stress level. Be Calm and try this meditation music for additional benifits.",
+      image: "../images/low-stress.jpg"
+    }
+
+
+    const mediumStress = {
+      text: "You are having a moderate stress level.Try meditating for sometime and contact a nearby doctor.",
+      image: "../images/medium-stress.jpg"
+    }
+
+    const highStress = {
+      text: "You are at high stress levels. Consult a Doctor for better results.",
+      image: "../images/high-stress.jpg"
+    }
+
+    const extremeStress = {
+      text: "Your Stress Level is Very High. Contact a Doctor immediately.",
+      image: "../images/extreme-stress.jpg"
+    }
+
+    if (mostRecentScore <= 0) {
+      finalscore.innerText = noStress.score;
+      setImage.src = noStress.image;
+    } else if (0 < mostRecentScore && mostRecentScore <= 25) {
+      finalScore.innerText = lowStress.text;
+      setImage.src = lowStress.image;
+    } else if (25 < mostRecentScore && mostRecentScore <= 75) {
+      finalScore.innerText = mediumStress.text;
+      setImage.src = mediumStress.image;
+    } else if (75 < mostRecentScore && mostRecentScore <= 100) {
+      finalScore.innerText = highStress.text;
+      setImage.src = highStress.image;
+    } else if (100 < mostRecentScore && mostRecentScore <= 150) {
+      finalScore.innerText = extremeStress.text;
+      setImage.src = extremeStress.image;
+    }
+  </script>
+</body>
+
+
+</html>

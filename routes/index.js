@@ -2,6 +2,7 @@ const express =require('express');
 const router = express.Router();
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
+
 //Home Page
 router.get('/',function(req,res){
   res.render('index');
@@ -11,11 +12,6 @@ router.get('/',function(req,res){
 //Quiz
 router.get('/game',function(req,res){
   res.render('game');
-});
-
-//Result
-router.get('/end',function(req,res){
-  res.render('end');
 });
 
 
@@ -30,7 +26,9 @@ router.get('/meditate',function(req,res){
   res.render('meditate');
 });
 
-
-
+// Result page
+router.get('/result',function(req,res) {
+  res.render('result');
+});
 
 module.exports = router;

@@ -66,7 +66,7 @@ body{
 
   .nav-item {
     font-family: 'Ubuntu';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-left: 2px;
     line-height: normal;
   }
@@ -216,7 +216,27 @@ body{
     width: 100%;
   }
 
+
+  /* Result page Section */
+
+  #result-container.container-fluid{
+    padding: 3% 5%;
+
+  }
+
+  #finalScore{
+    font-size: 3rem;
+    color: #264653;
+    font-weight: 700;
+  }
+
+  #resultImage{
+    border-radius:;
+  }
+
   /* Footer-Section */
   #footer .container-fluid{
     padding: 3% 15% 3%;
+    background-color: #eddcd2;
+    margin-top: 3%;
   }
