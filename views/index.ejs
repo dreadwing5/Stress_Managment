@@ -18,38 +18,44 @@
 </head>
 
 <body>
+    <div id="nav" class="container-fluid">
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">MindSpace</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="list-item navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">Home
+                    </a>
+                    <span class="sr-only">(current)</span>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
 
-  <section class="colored-section" id="title">
-    <div class="container-fluid">
+                  </li>
 
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">Stress Management</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <!-- ml-auto adds a margin to the left -->
-            <li class="nav-item">
-              <a class="nav-link" href="">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/meditate">Meditate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/blog">Blog</a>
-            </li>
-            <li class = "nav-item">
-              <a class ="nav-link" href="/user-page">Login</a>
-            </li>
-            <li class = "nav-item">
-              <a class ="nav-link" href="/nearby-hospitals">Nearby Hospitals</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/meditate">Meditate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/user-page">Login</a>
+                  </li>
 
+                  <li class="nav-item">
+                    <a class="nav-link" href="/nearby-hospitals">Nearby Hospitals</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+    </div>
+
+
+      <section class="colored-section">
+        <div id="title" class="container-fluid">
       <!-- Title -->
 
       <div class="row">
@@ -114,7 +120,7 @@
   </section>
 
   <!-- Test -->
-  <section class="colored-section" id="test">
+  <section class="blue-colored-section" id="test">
     <div class="container-fluid">
       <div class="row">
         <div class="test-content col-lg-6">
@@ -132,16 +138,16 @@
   <!-- Footer -->
   <footer class="white-section" id="footer">
     <div class="container-fluid">
-      <p>© Copyright 2020 No Stress</p>
+      <p>© Copyright 2020 Mind Space</p>
     </div>
   </footer>
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
+<!-- <df-messenger
   intent="WELCOME"
   chat-title="HelpBot"
   agent-id="b6338e45-08bb-4335-83f0-03ab9d5389f6"
   language-code="en"
-></df-messenger>
+></df-messenger> -->
 </body>
 
 </html>

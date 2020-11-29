@@ -1,7 +1,7 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
-const scoreText = document.getElementById('score');
+// const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -26,6 +26,7 @@ fetch('questions.json')
 //CONSTANTS
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
+let flag = 0;
 
 startGame = () => {
     questionCounter = 0;
@@ -35,12 +36,16 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (availableQuesions.length === 0 || questionCounter === MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        //go to the end page
-        return window.location.assign('/end');
+        document.getElementById("button").style.display='block';
+        flag =1 ;
     }
-    questionCounter++;
+    console.log(flag);
+    if(flag===0){
+        questionCounter++;
+    }
+
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
@@ -66,7 +71,7 @@ choices.forEach((choice) => {
         const selectedChoice = e.target;
         const classToApply = selectedChoice.dataset['number'];
 
-       
+
         if (classToApply ==1) {
             incrementScore(15);
         }
@@ -93,10 +98,4 @@ choices.forEach((choice) => {
 
 incrementScore = (num) => {
     score += num;
-    scoreText.innerText = score;
 };
-
-if(score<=0){
-     
-}
-

@@ -42,20 +42,6 @@ h3 {
 
 /* UTILITIES */
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.container > * {
-  width: 100%;
-}
 
 .flex-column {
   display: flex;
@@ -92,11 +78,19 @@ h3 {
   background-color: white;
 }
 
-.btn:hover {
+/* .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transition: transform 150ms;
     transform: scale(2, 4)
+} */
+
+#button {
+  /* display: none; */
+  position: relative;
+  left: 565px;
+  margin-top: 4%;
+  border-radius: 0;
 }
 
 /* FORMS */
@@ -118,4 +112,8 @@ input {
 
 input::placeholder {
   color: #aaa;
+}
+
+.choice-text {
+  text-align: left;
 }
