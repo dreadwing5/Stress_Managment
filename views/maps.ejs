@@ -1,20 +1,8 @@
-<!--
-  Copyright 2019 Google LLC
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
--->
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Mental Health Hospiatls</title>
+  <title>Nearby Mental Health Hospiatls</title>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <style>
@@ -85,9 +73,6 @@
   <div id="map"></div>
 
   <script>
-    /* Note: This example requires that you consent to location sharing when
-     * prompted by your browser. If you see the error "Geolocation permission
-     * denied.", it means you probably did not give permission for the browser * to locate you. */
     let pos;
     let map;
     let bounds;
@@ -95,6 +80,8 @@
     let currentInfoWindow;
     let service;
     let infoPane;
+
+
     function initMap() {
       // Initialize variables
       bounds = new google.maps.LatLngBounds();
@@ -136,7 +123,10 @@
     // Handle a geolocation error
     function handleLocationError(browserHasGeolocation, infoWindow) {
       // Set default location to Sydney, Australia
-      pos = { lat: -33.856, lng: 151.215 };
+      pos = {
+        lat: -33.856,
+        lng: 151.215
+      };
       map = new google.maps.Map(document.getElementById('map'), {
         center: pos,
         zoom: 15
@@ -188,7 +178,8 @@
           let request = {
             placeId: place.place_id,
             fields: ['name', 'formatted_address', 'geometry', 'rating',
-              'website', 'photos','formatted_phone_number','opening_hours']
+              'website', 'photos', 'formatted_phone_number', 'opening_hours'
+            ]
           };
 
           /* Only fetch the details of a place when the user clicks on a marker.
@@ -279,7 +270,7 @@
     }
   </script>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKs1WP38NBxhOqrNpUmYwHqqhAVWIhLeQ&libraries=places&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2Q7I6jcjFlR2TBvTD7XTVcfFg8ZMPXfg&libraries=places&callback=initMap">
   </script>
 </body>
 

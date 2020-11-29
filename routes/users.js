@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcryptjs');
 const passport = require('passport');
-
-
+// const GoogleStrategy = require('passport-google-oauth2').Strategy;
+const bcrypt = require('bcryptjs');
 //User Model
 const User = require('../models/User');
 //Login Page
@@ -76,7 +75,7 @@ router.post('/register', function (req, res) {
                     const newUser = new User({
                         name,
                         email,
-                        password
+                        password,
                     });
 
                     //Hash Password
@@ -107,7 +106,7 @@ router.post('/register', function (req, res) {
 //Login Handle
 router.post('/login', (req, res,next) => {
     passport.authenticate('local', {
-        successRedirect: '/dashboard',
+        successRedirect: '/user-page',
         failureRedirect: '/login',
         failureFlash: true
     })(req, res, next);
@@ -120,5 +119,6 @@ router.get('/logout',(req,res)=>{
     req.flash('success_msg','You are logged out');
     res.redirect('/login');
 })
+
 
 module.exports = router;
