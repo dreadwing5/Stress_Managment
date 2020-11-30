@@ -37,8 +37,8 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-    questionElement.classList.add("question-slide");
-    choiceElement.classList.add("choice-slide");
+   
+    
     if (availableQuesions.length === 0 || questionCounter === MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         document.getElementById("button").style.display = 'block';
@@ -46,6 +46,8 @@ getNewQuestion = () => {
     }
     if (flag === 0) {
         questionCounter++;
+        questionElement.classList.add("question-slide");
+        choiceElement.classList.add("choice-slide");
     }
 
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;

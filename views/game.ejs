@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <
   <!-- Bootstrap -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -27,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
- <!-- Custom Css -->
+  <!-- Custom Css -->
 
   <link rel="stylesheet" href="css/game.css" />
 </head>
@@ -52,29 +51,33 @@
         <h2 id="question">What is the answer to this questions?</h2>
       </div>
       <div id="choice-animation">
-      <div class="choice-container">
-        <p class="choice-prefix">A</p>
-        <p class="btn btn-dark choice-text" data-number="1">Choice 1</p>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="btn btn-dark choice-text" data-number="1">Choice 1</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="btn btn-dark choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="btn btn-dark choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="btn btn-dark choice-text" data-number="4">Choice 4</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">E</p>
+          <p class="btn btn-dark choice-text" data-number="5">Choice 5</p>
+        </div>
       </div>
-      <div class="choice-container">
-        <p class="choice-prefix">B</p>
-        <p class="btn btn-dark choice-text" data-number="2">Choice 2</p>
+      <div class="submit-buttons">
+        <a href="/result"><button id="button" class="submit-button btn btn-outline-dark">Submit</button></a>
       </div>
-      <div class="choice-container">
-        <p class="choice-prefix">C</p>
-        <p class="btn btn-dark choice-text" data-number="3">Choice 3</p>
-      </div>
-      <div class="choice-container">
-        <p class="choice-prefix">D</p>
-        <p class="btn btn-dark choice-text" data-number="4">Choice 4</p>
-      </div>
-      <div class="choice-container">
-        <p class="choice-prefix">E</p>
-        <p class="btn btn-dark choice-text" data-number="5">Choice 5</p>
-      </div>
-      <a href="/result"><button id="button" class="submit-button btn btn-outline-dark">Submit</button></a>
-      </div>
-  </div>
+      
+
+    </div>
   </div>
 
   <script src="js/game.js"></script>
