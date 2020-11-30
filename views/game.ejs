@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Check your stress</title>
 
-    <!-- Bootstrap -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <
+  <!-- Bootstrap -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,58 +23,61 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
 
-   <!-- Google Fonts -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/game.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="game" class="justify-center flex-column">
-        <div id="hud">
-          <div id="hud-item">
-            <p id="progressText" class="hud-prefix">
-              Question
-            </p>
-            <div id="progressBar">
-              <div id="progressBarFull"></div>
-            </div>
+ <!-- Custom Css -->
+
+  <link rel="stylesheet" href="css/game.css" />
+</head>
+
+<body>
+
+  <title>Stress Quiz</title>
+
+  <div class="container">
+    <div id="game" class="justify-center flex-column">
+      <div id="hud">
+        <div id="hud-item">
+          <p id="progressText" class="hud-prefix">
+            Question
+          </p>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
           </div>
-          <!-- <div id="hud-item">
-            <p class="hud-prefix">
-              Score
-            </p>
-            <h1 class="hud-main-text" id="score">
-              0
-            </h1>
-          </div> -->
         </div>
-        <h2 id="question">What is the answer to this questions?</h2>
-        <div class="choice-container">
-          <p class="choice-prefix">A</p>
-          <p class="btn btn-dark choice-text" data-number="1">Choice 1</p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">B</p>
-          <p class="btn btn-dark choice-text" data-number="2">Choice 2</p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">C</p>
-          <p class="btn btn-dark choice-text" data-number="3">Choice 3</p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">D</p>
-          <p class="btn btn-dark choice-text" data-number="4">Choice 4</p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">E</p>
-          <p class="btn btn-dark choice-text" data-number="5">Choice 5</p>
-        </div>
-        <a href="/result"><button id="button" class="submit-button btn btn-outline-dark">Submit</button></a>
       </div>
-    </div>
-    <script src="js/game.js"></script>
-  </body>
+      <div id="quiz-container">
+        <h2 id="question">What is the answer to this questions?</h2>
+      </div>
+      <div id="choice-animation">
+      <div class="choice-container">
+        <p class="choice-prefix">A</p>
+        <p class="btn btn-dark choice-text" data-number="1">Choice 1</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">B</p>
+        <p class="btn btn-dark choice-text" data-number="2">Choice 2</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">C</p>
+        <p class="btn btn-dark choice-text" data-number="3">Choice 3</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">D</p>
+        <p class="btn btn-dark choice-text" data-number="4">Choice 4</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">E</p>
+        <p class="btn btn-dark choice-text" data-number="5">Choice 5</p>
+      </div>
+      <a href="/result"><button id="button" class="submit-button btn btn-outline-dark">Submit</button></a>
+      </div>
+  </div>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+
 </html>
