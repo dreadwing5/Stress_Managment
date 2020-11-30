@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 
+
+
 .app {
   height: 100vh;
   display: flex;
-  margin-left:175px;
   justify-content: space-evenly;
   align-items: center;
   font-family: "Montserrat", sans-serif;
@@ -26,6 +27,8 @@
 
 .home{
   padding: 7% 15%;
+  position: absolute;
+  right: 100px;
 }
 
 .time-select button,

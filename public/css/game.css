@@ -187,9 +187,7 @@ h3 {
   margin-top: 4%;
   border-color: #283c63;
 }
-/* .submit-buttons{
-  text-align: right;
-} */
+
 .submit-button{
   color: #283c63;
   left: 0px;
@@ -197,11 +195,11 @@ h3 {
   animation: buttonslide 0.8s forwards;
 }
 @-webkit-keyframes buttonslide {
-  100% { left: 576px; }
+  100% { left: 566px; }
 }
 
 @keyframes buttonslide {
-  100% { left: 576px; }
+  100% { left: 566px; }
 }
 
 .flex-column {

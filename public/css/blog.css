@@ -130,3 +130,6 @@ input[type="file"] {
 .del-buttons{
   margin-left: 10px;
 }
+.articles{
+  text-align: left;
+}
