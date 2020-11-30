@@ -23,6 +23,11 @@
   flex-direction: column;
   flex: 1;
 }
+
+.home{
+  padding: 7% 15%;
+}
+
 .time-select button,
 .sound-picker button {
   color: white;

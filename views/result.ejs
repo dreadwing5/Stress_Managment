@@ -80,7 +80,7 @@
       text: "YAY!!!  You are A happy person. Keep Smiling and Shining.",
       image: "../images/no-stress.jpg"
 
-    };
+    }
 
     const lowStress = {
       text: "You are having a low stress level. Be Calm and try this meditation music for additional benifits.",
@@ -104,7 +104,7 @@
     }
 
     if (mostRecentScore <= 0) {
-      finalscore.innerText = noStress.score;
+      finalScore.innerText = noStress.text;
       setImage.src = noStress.image;
     } else if (0 < mostRecentScore && mostRecentScore <= 25) {
       finalScore.innerText = lowStress.text;

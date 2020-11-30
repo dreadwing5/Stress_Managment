@@ -31,14 +31,14 @@ body {
     border: 1px solid white;
 }
 
-.main-nav li a:hover {
+/* .main-nav li a:hover {
     border: 1px solid white;
-}
+} */
 
 .main-nav li a {
     color: white;
     text-decoration: none;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
     font-family: "Roboto", sans-serif;
     font-size: 15px;
 }
@@ -79,7 +79,7 @@ h2 {
     margin-left: 440px;
 }
 
-.btn {
+ .btn {
     border: 1px solid white;
     padding: 10px 30px;
     color: white;
@@ -89,12 +89,12 @@ h2 {
     text-transform: uppercase;
 
 }
-.btn:hover {
+/* .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 3s;
-  }
+  }  */
 
 .btn-one {
     background-color: darkorange;
