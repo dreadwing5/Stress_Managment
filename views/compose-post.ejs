@@ -13,39 +13,41 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu&display=swap"
         rel="stylesheet">
 
+
     <!-- Custom styles for this template -->
+    <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/blog.css" rel="stylesheet">
 
     <!-- Material Icons -->
 
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+    <div id="nav" class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
             <a class="navbar-brand" href="#">MindSpace</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto list-item">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home    
+                        <a class="nav-link" href="/">Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user-page">Blog</a>
+                        <a class="nav-link" href="/user-page">Your Blog</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/compose">Compose</a>
@@ -56,10 +58,11 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+
+        </nav>
+    </div>
     <!-- Page Content -->
-    <div class="container compose-body">
+    <div id="compose-body" class="container-fluid">
         <%if(success!=''){%>
         <div class="alert alert-success" role="alert">
             <strong><%= success %></strong>
@@ -82,26 +85,26 @@
             </div>
             <button type="submit" class="btn btn-dark" name="button">Publish</button>
         </form>
-        
+
     </div>
-    
+
     <div class="footer-blog">
         <p class="footer-p">@ Copyright MindSpace 2020</p>
     </div>
 </body>
 
- <!-- Script -->
+<!-- Script -->
 
- <!-- Bootstrap Js -->
+<!-- Bootstrap Js -->
 
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
- integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
 </script>
 
 <!-- Jquery -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
- integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 </script>
 
 </html>
