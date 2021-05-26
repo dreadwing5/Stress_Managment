@@ -5,18 +5,15 @@
     "choice2": "Often",
     "choice3": "Sometimes",
     "choice4": "Almost Never",
-    "choice5": "Never",
-
-    "answer": 1
+    "choice5": "Never"
   },
   {
-    "question": "How often do you feel unable to control the important things in your life??",
+    "question": "How often do you feel unable to control the important things in your life?",
     "choice1": "Very Often",
     "choice2": "Often",
     "choice3": "Sometimes",
     "choice4": "Almost Never",
-    "choice5": "Never",
-    "answer": 3
+    "choice5": "Never"
   },
   {
     "question": "How often do you feel nervous and stressed?",
@@ -24,8 +21,7 @@
     "choice2": "Often",
     "choice3": "Sometimes",
     "choice4": "Almost Never",
-    "choice5": "Never",
-    "answer": 4
+    "choice5": "Never"
   },
   {
     "question": "How often do you feel confident about handling personal problems?",
@@ -33,9 +29,7 @@
     "choice2": "Almost Never",
     "choice3": "Sometimes",
     "choice4": "Often",
-    "choice5": "Very Often",
-
-    "answer": 1
+    "choice5": "Very Often"
   },
   {
     "question": "How often do you feel that things are going well for you?",
@@ -43,9 +37,7 @@
     "choice2": "Almost Never",
     "choice3": "Sometimes",
     "choice4": "Often",
-    "choice5": "Very Often",
-
-    "answer": 1
+    "choice5": "Very Often"
   },
   {
     "question": "How often do you feel you can’t cope with all the things you have to do?",
@@ -53,9 +45,7 @@
     "choice2": "Often",
     "choice3": "Sometimes",
     "choice4": "Almost Never",
-    "choice5": "Never",
-
-    "answer": 1
+    "choice5": "Never"
   },
   {
     "question": "How often are you able to control the things that irritate you?",
@@ -63,9 +53,7 @@
     "choice2": "Almost Never",
     "choice3": "Sometimes",
     "choice4": "Often",
-    "choice5": "Very Often",
-
-    "answer": 1
+    "choice5": "Very Often"
   },
   {
     "question": "How often do you feel on top of things?",
@@ -73,9 +61,7 @@
     "choice2": "Almost Never",
     "choice3": "Sometimes",
     "choice4": "Often",
-    "choice5": "Very Often",
-
-    "answer": 1
+    "choice5": "Very Often"
   },
   {
     "question": "How often have you been angry because of things outside of your control?",
@@ -83,9 +69,7 @@
     "choice2": "Often",
     "choice3": "Sometimes",
     "choice4": "Almost Never",
-    "choice5": "Never",
-
-    "answer": 1
+    "choice5": "Never"
   },
   {
     "question": "How often do you feel that there are too many difficulties for you to overcome?",
@@ -93,9 +77,7 @@
     "choice2": "Often",
     "choice3": "Sometimes",
     "choice4": "Almost Never",
-    "choice5": "Never",
-
-    "answer": 1
+    "choice5": "Never"
   }
   
 

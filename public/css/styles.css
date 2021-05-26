@@ -1,164 +1,267 @@
-body{
-    font-family: 'Montserrat';
-    text-align: center;
-  }
-  
-  h1{
-    font-family: "Montserrat-Bold";
-    font-size: 3.5rem;
-    line-height: 1.5;
-    font-weight: 800;
-  }
-  
-  h2{
-    font-family: "Montserrat-Bold";
-    font-size: 2.5rem;
-    line-height: 1.2;
-    font-weight: 600;
-  }
-  p{
-    color: #8f8f8f;
-  }
-  .colored-section{
-    background-color: #07689f;
-    color: #fff;
-  }
-  
-  .white-section{
-    color: #283c63;
-  }
-  
-  /* Containers */
-  .container-fluid{
-    padding: 7% 15%
-  }
-  
-  /* Navigation Bar */
-  .navbar{
-    padding: 0 0 4.5rem;
-  }
-  
-  .navbar-brand{
-    font-family: "Ubuntu";
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .nav-item{
-    padding: 0 18px;
-  }
-  
-  .nav-link{
-    font-size: 1.2rem;
-    font-family: "Montserrat-Light"
-  }
-  
-  /* Title section */
-  #title .container-fluid{
-    padding: 3% 15% 10%;
-    text-align: left;
-  }
-  /* Title Image */
-  
-  .title-image{
-    width: 100%;
-  }
-  
-  /* Introduction-section */
-  #intro{
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-  
-  /* Quiz Section */
-  #quiz{
-    text-align: right;
-    margin: 5% 0 0;
-  }
-  .first-page{
-    background-image: url("https://www.safalniveshak.com/wp-content/uploads/2019/01/stress.png");
-    background-size: 100%;
-  
-  }
-  
-  .second-page{
-    background-image: url(https://trainingindustry.com/content/uploads/2018/06/Employee-Wellness-and-Mental-Health-6.15.18.jpg);
-    background-size: 100%;
-  }
-  
-  .third-page{
-    background-image: url("https://www.stress.org/wp-content/uploads/2011/10/stress-banners2.jpg");
-    background-size: 100%;
-    text-align: left;
-  
-  }
-  .quiz-image{
-    width: 60%;
-    border-radius: 100%;
-    margin: 10px;
-  }
-  
-  .page2-heading{
-    font-size: 3.5rem;
-    font-family: "Helvetica";
-    font-weight: 900;
-    color: #fff;
-  }
-  
-  .page2-text{
-    font-size: 2rem;
-    line-height: 1.5;
-    color: #eaeaea;
-  }
-  
-  .page1-heading{
-    font-size: 3.5rem;
-    font-family: "Helvetica";
-    font-weight: 900;
-    color: #000;
-  }
-  
-  .page1-text{
-    font-size: 2rem;
-    line-height: 1.5;
-    color: #000;
-  }
-  
-  .page3-heading{
-    font-size: 3.5rem;
-    font-family: "Helvetica";
-    font-weight: 900;
-    color: #fff;
-  }
-  
-  .page3-text{
-    font-size: 2rem;
-    line-height: 1.5;
-    color: #fff;
-  }
-  
-  /* Test-Section */
-  #test{
-    margin: 3% 0;
-  
-  }
-  .test-content{
-    text-align: left;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: #fff;
-  }
-  
-  .test-para{
-    color: #fff;
-  }
-  .stress-check{
-    width: 100%;
-  }
-  
-  /* Footer-Section */
-  #footer .container-fluid{
-    padding: 3% 15% 3%;
-  }
-  
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+  background-color: #f7fff7;
+}
+
+/* Hide Scroll Bar */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-family: "Montserrat-Bold";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+
+p {
+  color: #8f8f8f;
+}
+
+#big-heading{
+  font-family: 'Merriweather', serif;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: left;
+  color: #283c63;
+  padding-bottom: 2%;
+}
+
+.colored-section {
+  background-color: #f7fff7;
+  color: #283c63;
+}
+
+.white-section {
+  color: #283c63;
+}
+
+.blue-colored-section {
+  background-color: #73bfdc;
+  color: #fff;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%
+}
+
+.container {
+  width: 100%
+}
+
+/* navbar */
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.nav-item {
+  font-family: 'Ubuntu';
+  font-size: 1.1rem;
+  padding-left: 2px;
+  line-height: normal;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  margin-left: 5%;
+}
+
+.list-item {
+  /* margin-left: 5%; */
+  margin-right: 50px;
+
+}
+
+
+#nav.container-fluid {
+  padding: 0 0;
+  margin-top: 2%;
+}
+
+/* Title section */
+#title.container-fluid {
+  padding: 7% 5%;
+  text-align: left;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 100%;
+}
+
+.quiz-button {
+  padding: 2% 5%;
+
+}
+
+.icon {
+  margin: 0px 3px;
+}
+
+/* Introduction-section */
+#intro {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.carousel-button {
+  padding: auto 2%;
+}
+
+/* Quiz Section */
+#quiz {
+  text-align: right;
+  margin: 5% 0 0;
+}
+
+/* Carousel Section */
+
+.first-page {
+  background-image: url("../images/carousel-img-02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+
+}
+
+.second-page {
+  background-image: url("../images/carousel-img-03.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.third-page {
+  background-image: url("../images/carousel-img-01.jpg");
+  /* text-align: left; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.quiz-image {
+  width: 60%;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.page2-heading {
+  font-size: 3.5rem;
+  font-family: "Helvetica";
+  font-weight: 900;
+  color: #fff;
+  text-align: left;
+}
+
+.page2-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+}
+
+.page1-heading {
+  font-size: 3.5rem;
+  font-family: "Helvetica";
+  font-weight: 900;
+  color: #fff;
+  text-align: left;
+}
+
+.page1-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+}
+
+.page3-heading {
+  font-size: 3.5rem;
+  font-family: "Helvetica";
+  font-weight: 900;
+  color: white;
+  text-align: right;
+}
+
+.page3-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: white;
+  text-align: right;
+  font-weight: 500;
+}
+
+/* Test-Section */
+#test {
+  margin: 3% 0;
+
+}
+
+.test-content {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.test-para {
+  color: #fff;
+}
+
+.stress-check {
+  width: 100%;
+}
+
+
+/* Result page Section */
+
+#result-container.container-fluid {
+  padding: 3% 5%;
+
+}
+
+#finalScore {
+  font-size: 3rem;
+  color: #264653;
+  font-weight: 700;
+}
+
+#resultImage {
+  border-radius: ;
+}
+
+/* Footer-Section */
+#footer .container-fluid {
+  padding: 3% 15% 3%;
+  background-color: #eddcd2;
+  margin-top: 3%;
+}

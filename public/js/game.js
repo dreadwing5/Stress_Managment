@@ -1,9 +1,10 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
-const scoreText = document.getElementById('score');
+// const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
-let currentQuestion = {};
+const questionElement = document.getElementById("quiz-container");
+const choiceElement = document.getElementById("choice-animation");
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
@@ -26,6 +27,7 @@ fetch('questions.json')
 //CONSTANTS
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
+let flag = 0;
 
 startGame = () => {
     questionCounter = 0;
@@ -35,18 +37,26 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+   
+    
+    if (availableQuesions.length === 0 || questionCounter === MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        //go to the end page
-        return window.location.assign('/end');
+        document.getElementById("button").style.display = 'block';
+        flag = 1;
     }
-    questionCounter++;
+    if (flag === 0) {
+        questionCounter++;
+        questionElement.classList.add("question-slide");
+        choiceElement.classList.add("choice-slide");
+    }
+
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
+    console.log(currentQuestion);
     question.innerText = currentQuestion.question;
 
     choices.forEach((choice) => {
@@ -60,43 +70,36 @@ getNewQuestion = () => {
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
-        if (!acceptingAnswers) return;
+      if (!acceptingAnswers) return;
+            questionElement.classList.remove("question-slide");
+            choiceElement.classList.remove("choice-slide");
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const classToApply = selectedChoice.dataset['number'];
 
-       
-        if (classToApply ==1) {
+
+        if (classToApply == 1) {
             incrementScore(15);
-        }
-        else if (classToApply==2){
+        } else if (classToApply == 2) {
             incrementScore(10)
-        }
-        else if (classToApply==3){
+        } else if (classToApply == 3) {
             incrementScore(5)
-        }
-        else if (classToApply==4){
+        } else if (classToApply == 4) {
             incrementScore(0)
-        }
-        else if (classToApply==5){
+        } else if (classToApply == 5) {
             incrementScore(-5)
         }
         selectedChoice.parentElement.classList.add(classToApply);
 
+
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 1000);
+        }, 600);
     });
 });
 
 incrementScore = (num) => {
     score += num;
-    scoreText.innerText = score;
 };
-
-if(score<=0){
-     
-}
-

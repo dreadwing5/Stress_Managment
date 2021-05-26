@@ -1,11 +1,17 @@
 <%- include ("./partials/signin-header") %>
 <body>
-<div class="container">
-<div class="row mt-5">
+<div class="hero">
   <div class="col-md-6 m-auto">
-    <div class="card card-body">
-      <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
+    <div class="card card-body form-box">
+      <h1 class="heading"><i class="fas fa-sign-in-alt"></i>Login</h1>
       <%- include ("./partials/messages") %>
+      <div class="social-icons">
+        <img src="../images/fb.png">
+        <img src="../images/tw.png">
+        <a href="/auth/google"><img src="../images/gp.png"></a>
+
+    </div>
+
       <form action="/login" method="POST">
         <div class="form-group">
           <label for="email">Email</label>
@@ -34,7 +40,6 @@
       </p>
     </div>
   </div>
-</div>
 </div>
 
 <!-- Bootstrap JS-->
